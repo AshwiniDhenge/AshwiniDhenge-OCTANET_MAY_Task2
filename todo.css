@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #a18cd1, #fbc2eb); /* Gradient Background */
+    min-height: 100vh; /* Ensure full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft Box Shadow */
+}
+
+header {
+    background-color: #8e44ad; /* Purple */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-entry {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+}
+
+#add-task-btn {
+    background-color: #9b59b6; /* Dark Purple */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #8e44ad; /* Darker Purple on Hover */
+}
+
+.task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Lighter Grey Border */
+    width: 300px;
+    transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+    background-color: #f2f2f2; /* Light Grey Background on Hover */
+}
+
+.task-actions {
+    margin-top: 20px;
+}
+
+#delete-task-btn,
+#complete-task-btn {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#delete-task-btn:hover,
+#complete-task-btn:hover {
+    background-color: #c0392b; /* Darker Red on Hover */
+}
